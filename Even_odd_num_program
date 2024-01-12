@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Utility {
+
+public static void checkOddEven()
+{
+
+System.out.println("Please enter any number to check if it is odd or even:");
+
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+
+   if(a%2==0)
+    {
+     System.out.println(a+" is an even number");
+    }
+   else
+    {
+     System.out.println(a+ " is an odd number");
+    }
+}
