@@ -1,0 +1,41 @@
+import java.util.Scanner;                                                         //imported Scanner class from util package
+class Number_prog2{
+
+public static void checkPrime()                                                   //method created for checking number either prime or not
+{
+
+System.out.println("Please enter a number to to check either it is prime number or not: ");
+
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int count=0;
+  
+  for(int i=2;i<a/2;i++)
+   {
+     if(a%i==0)
+      {
+        count++;
+        break;
+      }
+     else
+      {
+     
+        i++;
+       }
+      
+   }
+  if(count==0)
+   {
+     System.out.println(a+" is not prime number");
+   }
+  else
+   {
+     System.out.println(a+" is  prime number");
+   }
+public static void main(String[]args)
+{
+    checkPrime();
+}
+}
+
+}
